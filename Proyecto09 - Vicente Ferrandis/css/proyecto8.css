@@ -1,0 +1,147 @@
+table{
+    width: 500px;
+     border: 4px solid black;
+     padding: 10px;
+     color:#191818; 
+    float: left;
+        margin-top: 5%;
+        margin-left: 5%;       
+}
+ .blue{
+    background: dodgerblue;
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+ }
+ .red{
+    background:crimson;
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+ 
+}
+.pink{
+    background:hotpink;
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+ 
+}
+.yellow{
+    background:yellow;
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+
+}
+.green{
+    background:forestgreen;
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+
+
+}
+.white{
+    background:beige;  
+    font-size:60px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+    border: 2px solid white;
+
+}
+.posrandomIni{
+    border: 2px dashed black;
+    font-size: 55px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+}
+.posrandomFin{
+
+    border: 2px solid black;
+    font-size: 55px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    width:85px;
+
+}
+
+#titulo{
+    padding: 10px 20% 10px;
+    color: #fff;
+    text-align:center;
+    background-color: green;
+    font-size: 30px;
+    border: 1px solid darkgreen;
+    text-shadow: 2px 2px 5px green;
+    box-shadow: 10px 10px 5px grey;
+    float:left;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-bottom: 2%;
+}
+
+input[type='movimiento']{
+    padding: 8px 25px 8px;
+    color: #fff;
+    text-align:center;
+    background-color: forestgreen;
+    font-size: 18px;
+    border: 1px solid darkgreen;
+    cursor:pointer;
+    float:center;
+        margin-top: 1%;
+}
+
+input[type='reiniciar']{
+    padding: 8px 25px 8px;
+    color: #fff;
+    text-align:center;
+    background-color: forestgreen;
+    font-size: 18px;
+    border: 1px solid darkgreen;
+    cursor:pointer;
+    float:center;
+        margin-top: 1%;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgreen;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: green;
+  }
+  
