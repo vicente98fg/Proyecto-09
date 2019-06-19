@@ -54,7 +54,7 @@ public function nuevoUsuario(){
 }
 
 public function seleccionarUsuario(){
-  $resultado=$this->conexion->query("SELECT * FROM usuario join usuario_juego WHERE nombre='Vicente'");
+  $resultado=$this->conexion->query("SELECT * FROM usuario join usuario_juego ORDER BY `id` DESC LIMIT 1");
   return $resultado;
   }
 
