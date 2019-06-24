@@ -49,16 +49,27 @@ $consulta->insertar();
         ?>
     </p>
 
-        <p style="text-align: center">Siguiente fila:
-        <input id= "sig" type="text"></p>
+        <p style="text-align: center"><b>Valores actuales:</b> <BR>
+        <input id= "valor" type="text" disabled="disabled"></p> 
+        
+        <p style="text-align: center">Siguiente fila: 
+        <input id="sig" type="text"></p>
+
         <p style="text-align: center">Siguiente columna:
-        <input id= "sig2" type="text"></p>
-        <p style="text-align: center"><button type="button" name="button" onclick="comprobarMovimiento()">Comprobar movimiento</button></p>
+        <input id="sig2" type="text"></p>
+
+        <p style="text-align: center"><input id="button" type="button" value="Comprobar movimiento" onClick="comprobarMovimiento();"></p>
+
         <p style="text-align: center">Movimientos realizados:
-        <input id= "mov" type="movimientos" value="" disabled=”disabled”></p>
+        <input id= "mov" type="movimientos" value="" disabled="disabled"></p>
+
         <p style="text-align: center">Número de movimientos:
-        <input type="nummov" value="" disabled=”disabled”></p>
-        <p style="text-align: center">
+        <input id="showCount" type="text" disabled="disabled"></p>
+
+        <p style="text-align: center">Mensajes:
+        <input id= "mensajes" type="text" disabled="disabled"></p>
+
+        
     </form>
     
     <p style="text-align: center"><input id="reiniciar" type="button" value="Reiniciar tablero" onClick="window.location.reload()"></p>
@@ -66,3 +77,4 @@ $consulta->insertar();
     
 </body>
 </html>
+

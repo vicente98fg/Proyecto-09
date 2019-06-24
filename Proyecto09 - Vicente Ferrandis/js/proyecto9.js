@@ -211,9 +211,25 @@ pintartablero(fila1,fila2,fila3,fila4,fila5,fila6,filacolor1,filacolor2,filacolo
 var cnt = 0;
 
 function comprobarMovimiento (fila1,fila2,fila3,fila4,fila5,fila6,filacolor1,filacolor2,filacolor3,filacolor4,filacolor5,filacolor6,posInicial,posFinal) {
-   
-    var fila = document.getElementById("sig").value;
-    var columna = document.getElementById("sig2").value;
+    
+    var fila,
+    element = document.getElementById('sig');
+    if (element != null) {
+        fila = element.value;
+    }
+    else {
+        fila = null;
+    }
+
+    var columna,
+    element = document.getElementById('sig2');
+    if (element != null) {
+        columna = element.value;
+    }
+    else {
+        columna = null;
+}
+    
 
     //Se comprueba que el número introducido es valido
 
@@ -287,28 +303,31 @@ function comprobarMovimiento (fila1,fila2,fila3,fila4,fila5,fila6,filacolor1,fil
 
     //Se comprueba que el movimiento pueda ser realizado
 
-    if (fila1[columna] == fila1[posICol] || filacolor1[columna] == filacolor1[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
-    } if (fila2[columna] == fila2[posICol] || filacolor2[columna] == filacolor2[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
-    } if (fila3[columna] == fila3[posICol] || filacolor3[columna] == filacolor3[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
-    } if (fila4[columna] == fila4[posICol] || filacolor4[columna] == filacolor4[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
-    } if (fila5[columna] == fila5[posICol] || filacolor5[columna] == filacolor5[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
-    } if (fila6[columna] == fila6[posICol] || filacolor6[columna] == filacolor6[posICol]) {
-        document.getElementById("mensajes").value = "Movimiento válido";
-
+    if (fila6[columna] === fila6[posICol] || filacolor6[columna] === filacolor6[posICol]) { // 0 4 - 0 4
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        console.log(`${fila6[columna]} == ${fila6[posICol]}`);
+        console.log(`${filacolor6[columna]} == ${filacolor6[posICol]}`);
+        
+    } if (fila5[columna] === fila5[posICol] || filacolor5[columna] === filacolor5[posICol]) { 
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        
+    } if (fila4[columna] === fila4[posICol] || filacolor4[columna] === filacolor4[posICol]) {
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        
+    } if (fila3[columna] === fila3[posICol] || filacolor3[columna] === filacolor3[posICol]) {
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        
+    } if (fila2[columna] === fila2[posICol] || filacolor2[columna] === filacolor2[posICol]) {
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        
+    } if (fila1[columna] === fila1[posICol] || filacolor1[columna] === filacolor2[posICol]) {
+        document.getElementById("mensajes").value = "Movimiento válido"; 
+        
     } else {
         document.getElementById("mensajes").value = "Movimiento inválido";
         return false;
     }
+
 
     if (fila == posIFila || columna == posICol) {
         posIFila = document.getElementById("sig").value;
@@ -317,7 +336,7 @@ function comprobarMovimiento (fila1,fila2,fila3,fila4,fila5,fila6,filacolor1,fil
         console.log(`Nueva posición de columna: ${posICol}`);
         
     } else {
-        alert("Hubo un problema")
+        document.getElementById("mensajes").value = "Hubo un problema";
         return false;
     }
 
