@@ -84,7 +84,7 @@ table{
     padding: 10px 20% 10px;
     color: #fff;
     text-align:center;
-    background-color: blue;
+    background-color: red;
     font-size: 30px;
     border: 1px solid darkgreen;
     text-shadow: 2px 2px 5px green;
@@ -126,7 +126,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: darkgreen;
+    background-color: darkblue;
   }
   
   li {

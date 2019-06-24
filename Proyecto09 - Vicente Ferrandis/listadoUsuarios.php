@@ -12,7 +12,7 @@ $resultado = $consulta->listarUsuarios();
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto9.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto8.css" />
 </head>
 <body>
   
