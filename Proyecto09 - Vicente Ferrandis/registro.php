@@ -24,7 +24,7 @@ if(isset($error)){
 </head>
 <body>
   
-<link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto8.css" /> 
+<link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto9.css" /> 
 
 <?php include "./assets/navSup.php"; ?>
 
