@@ -17,7 +17,6 @@ $consulta->insertar();
 ?>
 
 <!DOCTYPE html>
-<link rel="stylesheet" href="proyecto7.css"/>
 
 
 <html>
@@ -26,14 +25,14 @@ $consulta->insertar();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto8.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/proyecto9.css" />
     
 </head>
 <body>
 
 <?php include "./assets/navSup.php"; ?>    
 
-    <script src="./js/proyecto8.js">
+    <script src="./js/proyecto9.js">
     </script>
 
     <div id=titulo>MicroRobots</div>
